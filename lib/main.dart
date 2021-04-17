@@ -1,7 +1,33 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(QuizzApp());
+}
+
+class QuizzApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: QuizzPage(),
+    );
+  }
+}
+
+class QuizzPage extends StatefulWidget {
+  @override
+  _QuizzPageState createState() => _QuizzPageState();
+}
+
+class _QuizzPageState extends State<QuizzPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Quizz"),
+      ),
+    );
+  }
 }
 
 class MyApp extends StatelessWidget {
